@@ -9,4 +9,4 @@ cache:
   - packages/react-scripts/node_modules
 install: true
 script:
-  - npm run lint
+  - npm test
