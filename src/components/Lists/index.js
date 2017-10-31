@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const renderLists = (lists, handleSelection) =>
   lists.map(list =>
-    <li> <button href="#" onClick={() => handleSelection(list)}>{list.title}</button> </li>);
+    <li> <button onClick={() => handleSelection(list)}>{list.title}</button> </li>);
 
 const Lists = ({ lists, handleSelection }) => (
   <aside className="column is-2">
