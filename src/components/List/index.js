@@ -1,15 +1,13 @@
 import React from 'react';
 
-const List = () => {
+const renderItems = list => list.items.map(item => <li>{item.description}</li>);
+
+const List = ({ list }) => {
   return (
     <div className="column List">
-      <h2>List name</h2>
+      <h2>{ list.title }</h2>
       <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
+        { renderItems(list)}
       </ul>
       <form action="javascript:">
         <input type="text" placeholder="Add new item"/>
