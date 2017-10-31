@@ -1,11 +1,14 @@
 import React from 'react';
 import './style.css';
+import Header from '../Header/index';
+import Main from '../Main/index';
+import Footer from '../Footer/index';
 
 const App = () => (
   <div className="App">
-    <header className="App-header">
-      <h1 className="App-title">Hello, jovem!</h1>
-    </header>
+    <Header />
+    <Main />
+    <Footer />
   </div>
 );
 
